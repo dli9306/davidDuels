@@ -1,31 +1,32 @@
 package main;
 
 public class Character implements Dueler {
-
+        private int hp;
+	    public Character(){}
+	    
 		@Override
 		public void setStartingHP(int hp) {
-			// TODO Auto-generated method stub
+			this.hp = hp;
 			
 		}
 		@Override
 		public int getHP() {
 			// TODO Auto-generated method stub
-			return 0;
+			return hp;
 		}
 		@Override
 		public void taunt() {
-			// TODO Auto-generated method stub
+			System.out.println("GET READY TO LOSE");
 			
 		}
 		@Override
 		public String getName() {
-			// TODO Auto-generated method stub
-			return null;
+			return "David Li";
 		}
 		@Override
 		public boolean determineIfOpponentIsFair(Dueler d, int hp) {
-			// TODO Auto-generated method stub
-			return false;
+			
+			
 		}
 
 }
