@@ -1,8 +1,6 @@
 package main;
 
-
-
-public class duel {
+public class Duel {
 
 	
 
@@ -17,7 +15,7 @@ public class duel {
 		duel.dukeItOut();
 	}
 	
-	public duel() {
+	public Duel() {
 		d1 = new CharacterA();
 		d2 = new CharacterB();
 	}
