@@ -25,8 +25,22 @@ public class Character implements Dueler {
 		}
 		@Override
 		public boolean determineIfOpponentIsFair(Dueler d, int hp) {
-			
+		   if()
 			
 		}
+
+		@Override
+		public int getAction(Object caller) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+		@Override
+		public void hit(Object caller) {
+		
+			
+		}
+
+
 
 }
