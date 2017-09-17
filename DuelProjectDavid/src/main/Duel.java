@@ -1,6 +1,6 @@
 package main;
 
-import duel.Dueler;
+
 
 public class Duel {
 
@@ -18,8 +18,8 @@ public class Duel {
 	private int d1LastAction = 3;
 	private int d2LastAction = 3;
 	
-	private int dueler1HP = 30;
-	private int dueler2HP = 30;
+	private int dueler1HP = 100;
+	private int dueler2HP = 100;
 	private boolean d1Loaded;
 	private boolean d2Loaded;
 	
@@ -33,8 +33,8 @@ public class Duel {
 	
 	
 	public Duel() {
-		d1 = new Character();
-		d2 = new Character();
+		d1 = new CharacterA();
+		d2 = new CharacterB();
 	}
 	
 	public void dukeItOut(){

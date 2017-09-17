@@ -1,8 +1,8 @@
 package main;
 
-public class Character implements Dueler {
+public class CharacterA implements Dueler {
         private int hp;
-	    public Character(){}
+	    public CharacterA(){}
 	    
 		@Override
 		public void setStartingHP(int hp) {

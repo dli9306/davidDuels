@@ -1,8 +1,8 @@
 package main;
 
-public class Character implements Dueler {
+public class CharacterB implements Dueler {
         private int hp;
-	    public Character(){}
+	    public CharacterB(){}
 	    
 		@Override
 		public void setStartingHP(int hp) {
@@ -16,12 +16,12 @@ public class Character implements Dueler {
 		}
 		@Override
 		public void taunt() {
-			System.out.println("GET READY TO LOSE");
+			System.out.println("HAVE FUN BRO!");
 			
 		}
 		@Override
 		public String getName() {
-			return "David Li";
+			return "Eric Li";
 		}
 		@Override
 		public boolean determineIfOpponentIsFair(Dueler d, int hp) {
