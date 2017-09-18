@@ -45,7 +45,7 @@ public class CharacterB implements Dueler {
 		@Override
 		public void hit(Object caller) {
 		    if( caller instanceof Duel) {
-		    	this.hp -= 10;
+		    	hp -= 10;
 		    }
 			
 		}
