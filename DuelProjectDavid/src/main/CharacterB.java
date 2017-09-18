@@ -39,7 +39,7 @@ public class CharacterB implements Dueler {
 
 		@Override
 		public int getAction(Object caller) {
-			 return (int) (Math.random() *3 +0);
+			 return  (int) (Math.random() *3 +0);
 		}
 
 		@Override
