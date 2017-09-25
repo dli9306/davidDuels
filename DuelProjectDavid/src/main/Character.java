@@ -2,6 +2,7 @@ package main;
 
 public class Character implements Dueler {
         private int hp;
+        private boolean loaded = false;
 	    public Character(){}
 	    
 		@Override
@@ -39,13 +40,29 @@ public class Character implements Dueler {
 
 		@Override
 		public int getAction(Object caller) {
-			 return (int) (Math.random() *3 +0);
+			if(caller instanceof Dueler)
+			{
+				return 3;
+			}
+			 if(!loaded) {
+				  loaded = true;
+				 return 0;
+			 }
+			 if(Math.random() > 0.5 && loaded ) {
+				 loaded = false;
+				return 1;
+			 }
+			 else {
+				 return 2;
+			 }
+			 
+		
 		}
 
 		@Override
 		public void hit(Object caller) {
 		    if( caller instanceof Duel) {
-		    	this.hp -= 10;
+		    	hp -= 10;
 		    }
 			
 		}

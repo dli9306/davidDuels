@@ -33,8 +33,8 @@ public class Duel {
 	
 	
 	public Duel() {
-		d1 = new CharacterA();
-		d2 = new CharacterB();
+		d1 = new Character();
+		d2 = new Character();
 	}
 	
 	public void dukeItOut(){
